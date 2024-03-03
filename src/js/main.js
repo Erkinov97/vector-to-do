@@ -1,9 +1,11 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
+import '../css/input.css'
+import javascriptLogo from '/icons/javascript.svg'
+import viteLogo from '/icons/vite.svg'
 import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
+const app = document.querySelector('#app')
+console.log(app);
+app.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
